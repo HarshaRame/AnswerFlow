@@ -1,0 +1,12 @@
+# AnswerFlow Project Dependencies
+
+# Core dependencies
+pandas>=2.1.0
+requests>=2.31.0
+openpyxl>=3.1.0
+
+# Playwright for browser automation
+playwright>=1.40.0
+
+# Optional: for GUI file dialog
+# tkinter (usually comes with Python)
