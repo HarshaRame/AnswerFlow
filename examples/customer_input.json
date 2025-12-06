@@ -1,0 +1,19 @@
+{
+  "attributes": {
+    "product_name": "Wireless Headphones",
+    "color": "Black",
+    "size": "Medium",
+    "price": 99.99,
+    "brand": "TechAudio",
+    "in_stock": true,
+    "category": "Electronics",
+    "weight": "250g"
+  },
+  "images": [
+    "examples/sample_product.png"
+  ],
+  "metadata": {
+    "customer_id": "CUST-12345",
+    "session_id": "SESSION-98765"
+  }
+}

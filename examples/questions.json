@@ -1,0 +1,17 @@
+[
+  {
+    "text": "What are the features of this product?",
+    "category": "product_info",
+    "priority": "high"
+  },
+  {
+    "text": "What is the size and color?",
+    "category": "specifications",
+    "priority": "normal"
+  },
+  {
+    "text": "Is this product suitable for outdoor use?",
+    "category": "usage",
+    "priority": "normal"
+  }
+]
