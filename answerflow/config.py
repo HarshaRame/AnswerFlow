@@ -26,6 +26,9 @@ class Config:
     SCREENSHOT_ON_FAILURE: bool = os.getenv("SCREENSHOT_ON_FAILURE", "true").lower() == "true"
     SCREENSHOT_DIR: str = os.getenv("SCREENSHOT_DIR", "screenshots")
     
+    # Answer settings
+    DEFAULT_CONFIDENCE: float = float(os.getenv("DEFAULT_CONFIDENCE", "0.85"))
+    
     @classmethod
     def get(cls, key: str, default: Optional[str] = None) -> Optional[str]:
         """Get configuration value by key."""

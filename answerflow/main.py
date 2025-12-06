@@ -129,11 +129,13 @@ def parse_attributes(attr_list: List[str]) -> Dict[str, Any]:
                 value = True
             elif value.lower() == 'false':
                 value = False
-            elif value.isdigit():
-                value = int(value)
             else:
+                # Try to parse as integer or float
                 try:
-                    value = float(value)
+                    if '.' not in value:
+                        value = int(value)
+                    else:
+                        value = float(value)
                 except ValueError:
                     pass  # Keep as string
             
@@ -351,7 +353,7 @@ def main():
                 flow.navigate(args.url)
             
             # Answer questions
-            answers = flow.answer_multiple_questions(questions, customer_input, args.url)
+            answers = flow.answer_multiple_questions(questions, customer_input, context_url=args.url)
             
             # Take screenshot if requested
             if args.screenshot:

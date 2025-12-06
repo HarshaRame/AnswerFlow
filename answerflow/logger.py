@@ -47,7 +47,7 @@ def setup_logger(
     
     # File handler
     file_path = log_file or Config.LOG_FILE
-    if file_path:
+    if file_path and file_path.strip():
         # Create logs directory if it doesn't exist
         log_dir = Path(file_path).parent
         log_dir.mkdir(parents=True, exist_ok=True)

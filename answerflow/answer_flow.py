@@ -168,7 +168,7 @@ class AnswerFlow:
         answer = Answer(
             question=question,
             text=answer_text,
-            confidence=0.85,  # Default confidence
+            confidence=Config.DEFAULT_CONFIDENCE,
             metadata={
                 "processed_input": processed_input,
                 "context_url": context_url
